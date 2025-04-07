@@ -22,11 +22,5 @@ return {
         path = '~/Documents/obsidian/_pandora',
       },
     },
-
-    templates = {
-      folder = '~/Documents/obsidian/pandora/99 - meta/templates/',
-      date_format = '%Y-%m-%d-%a',
-      time_format = '%H:%M',
-    },
   },
 }

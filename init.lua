@@ -26,5 +26,6 @@ require('lazy').setup {
   require 'plugins.gitsigns',
   require 'plugins.alpha',
   require 'plugins.indentline',
+  require 'plugins.obsidian',
   require 'plugins.misc',
 }

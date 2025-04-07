@@ -23,7 +23,12 @@ return {
 
     local sources = {
       diagnostics.checkmake,
-      formatting.prettier.with { filetypes = { 'html', 'json', 'yaml', 'markdown' } },
+      formatting.prettier.with {
+        filetypes = { 'html', 'json', 'yaml', 'markdown' },
+        args = {
+          '--html-whitespace-sensitivity=ignore', -- Prevent Prettier from removing leading spaces in HTML
+        },
+      },
       formatting.stylua,
       formatting.shfmt.with { args = { '-i', '4' } },
     }
