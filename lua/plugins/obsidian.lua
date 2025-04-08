@@ -19,8 +19,19 @@ return {
     workspaces = {
       {
         name = 'personal',
-        path = '~/Documents/obsidian/_pandora',
+        path = '~/Documents/obsidian/pandora',
       },
     },
+    templates = {
+      folder = '~/Documents/obsidian/pandora/99 - meta/templates',
+      date_format = '%Y-%m-%d',
+      time_format = '%H:%M',
+    },
+    completion = {
+      nvim_cmp = false,
+    },
+
+    new_notes_location = 'current_dir',
+    disable_frontmatter = true,
   },
 }
