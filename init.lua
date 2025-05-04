@@ -12,7 +12,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- NOTE: Here is where you install your plugins.
+-- NOTE: These are my plugins.
 require('lazy').setup {
   require 'plugins.lsp',
   require 'plugins.neotree',
@@ -27,5 +27,7 @@ require('lazy').setup {
   require 'plugins.alpha',
   require 'plugins.indentline',
   require 'plugins.obsidian',
+  require 'plugins.oil',
+  require 'plugins.lazygit',
   require 'plugins.misc',
 }
